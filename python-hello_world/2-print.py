@@ -1,2 +1,2 @@
-#!/bin/bash
-python3 $fule2
+#!/usr/bin/python3
+print(f"Programming is like building a multilingual puzzel\n")
