@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 number = 98
 name = "Battery street"
-print(f"%s %s" % (number, name))
+print(F"%s %s" % (number, name))
