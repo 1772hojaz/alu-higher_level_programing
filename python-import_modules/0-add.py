@@ -6,3 +6,5 @@ def add(a, b):
     print(f"{value1} + {value2} = {sum}")
     return(sum)
 add(1,2)
+if __name__ == "__main__":
+    main()
