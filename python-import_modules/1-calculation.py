@@ -17,6 +17,5 @@ def main():
     print("{} / {} = {}".format(a, b, dive))
 
 
-
 if __name__ == "__main__":
     main()
