@@ -1,6 +1,0 @@
-#!/bin/bash
-git add .
-read -p "What did you change: "commit
-git commit -m "$commit changed"
-git push
-
