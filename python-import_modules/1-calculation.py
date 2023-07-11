@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 
 
-from calculator_1.py import add, sub, mul, div
+from calculator_1 import add, sub, mul, div
 
 
 def main():
     a = 10
     b = 5
-    sum = add(a, b)
-    print("{} + {} = {}".format(a, b, sum))
-    sub = sub(a, b)
-    print("{} - {} = {}".format(a, b, sub))
+    suma = add(a, b)
+    print("{} + {} = {}".format(a, b, suma))
+    suba = sub(a, b)
+    print("{} - {} = {}".format(a, b, suba))
     muil = mul(a, b)
     print("{} * {} = {}".format(a, b, muil))
     dive = div(a, b)
