@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-import add_0 as addition
+import add_0
 
 def main():
     a = 1
     b = 2
-    sum = addition.add(a, b)
+    sum = add(a, b)
     print("{} + {} = {}".format(a, b, sum))
 
 if __name__ == "__main__":
