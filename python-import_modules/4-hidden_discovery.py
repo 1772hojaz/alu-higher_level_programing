@@ -1,17 +1,14 @@
 #!/usr/bin/python3
 
 
-import marshal
+import imp
 
-
-def print_module_names():
-    with open("hidden_4.pyc", "rb") as file:
-        code_object = marshal.load(file)
-    names = code_object.co_names
-    names = sorted(name for name in names if not name.startswith("__"))
-    for name in names:
-        print(name)
-
+def print_hidden_names(module_path):
+  module = imp.load_compiled("hidden_4", module_path)
+  names = [name for name in dir(module) if not name.startswith("__")]
+  names.sort()
+  for name in names:
+    print(name)
 
 if __name__ == "__main__":
-    print_module_names()
+  print_hidden_names("hidden_4.pyc")
