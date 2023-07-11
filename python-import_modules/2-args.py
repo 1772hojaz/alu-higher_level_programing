@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
+
 import sys
+
 
 def main(*argv):
     lstring = len(sys.argv) - 1
-    
+
     if lstring > 1:
         print("{:d} arguments:".format(lstring))
         for i in range(1, len(sys.argv)):
@@ -14,6 +16,7 @@ def main(*argv):
     else:
         print("{:d} argument:".format(lstring))
         print("{:d}: {}".format(1, sys.argv[1]))
+
 
 if __name__ == "__main__":
     main()
