@@ -14,8 +14,8 @@ def new_line():
 
 
 def main():
-    print_matrix_integer(matrix=[[]]))
-    new_line
+    print_matrix_integer(matrix=[[]])
+    new_line()
 
 
 if __name__ == "__main__":
