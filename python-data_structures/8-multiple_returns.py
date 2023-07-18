@@ -10,7 +10,7 @@ def multiple_returns(sentence):
 
 def main():
     multiple_returns(sentence)
-    
+
 
 if __name__ == "__main__":
     main()
