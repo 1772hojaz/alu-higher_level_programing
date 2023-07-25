@@ -5,7 +5,6 @@ its about  asquare"""
 
 
 class Square:
-    """This is the 
-    class"""
+"""This is the class"""
     def __init__(self, size):
         self.__size = size
