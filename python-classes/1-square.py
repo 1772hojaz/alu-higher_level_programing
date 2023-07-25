@@ -2,8 +2,6 @@
 
 """this is an empty class
 its about  asquare"""
-
-
 class Square:
 """This is the 
     class"""
