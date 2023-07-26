@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""area calculation"""
+"""area
+calculation"""
 
 
 class Square:
