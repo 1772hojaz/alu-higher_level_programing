@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """area calculation"""
 
 
