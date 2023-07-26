@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 
-"""area calculation
-This script defines a class named Square that represents a square. It contains a private attribute 'size'
-representing the size of the square side. The class provides methods to calculate the area of the square.
-"""
+"""Define a square"""
 
 
 class Square:
