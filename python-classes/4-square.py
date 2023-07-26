@@ -3,7 +3,14 @@
 
 
 class Square:
-    """private instance attribute: size"""
+    """A class representing a square.
+
+    Attributes:
+        size (int): The size of the square side.
+
+    Methods:
+        area(): Calculate the area of the square.
+    """
     def __init__(self, size=0):
         self.__size = size
 
