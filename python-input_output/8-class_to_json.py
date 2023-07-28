@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
     define a function 'class_to_json'
 """
