@@ -5,11 +5,13 @@
     use 'GitHub API to display 'id'
 """
 import sys
-import requests
-from requests.auth import HTTPBasicAuth
+from urllib.request import urlopen, Request
+from urllib.parse import urlencode
 
+if __name__ == '__main__':
+    data = urlencode({"email": sys.argv[2]
+                      }).encode("ascii")
 
-if __name__ == "__main__":
-    auth = HTTPBasicAuth(sys.argv[1], sys.argv[2])
-    r = requests.get("https://api.github.com/user", auth=auth)
-    print(r.json().get("id"))
+    request = Request(sys.argv[1], data)
+    with urlopen(request) as response:
+        print(response.read().decode('utf-8'))
