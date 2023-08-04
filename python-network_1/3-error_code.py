@@ -1,8 +1,6 @@
 cat > 3-	
 #!/usr/bin/python3
-"""
-    send a request to the URL & display body of the response
-"""
+""" send request to a url and displays the body of the response"""
 import sys
 import urllib.error
 import urllib.request
