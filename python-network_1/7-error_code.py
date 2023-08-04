@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-# python script that takes in a URL and an email address,
+"""a Python script that takes in a URL, sends a request to the URL and displays the body of the response."""
 
-"""
-    send a POST request to the passed URL with the email as a parameter,
-    & displaysthe body of the response
-"""
+
 if __name__ == '__main__':
     import requests
     import sys
