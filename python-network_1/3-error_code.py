@@ -1,4 +1,3 @@
-cat > 3-	
 #!/usr/bin/python3
 """ send request to a url and displays the body of the response"""
 import sys
