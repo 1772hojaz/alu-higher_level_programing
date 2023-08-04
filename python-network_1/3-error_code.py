@@ -1,16 +1,19 @@
 #!/usr/bin/python3
-""" send request to a url and displays the body of the response"""
+"""
+This script sends an HTTP request to a given URL and displays the body of the response.
+Usage: python script_name.py <url>
+"""
+
 import sys
 import urllib.error
 import urllib.request
-
 
 if __name__ == "__main__":
     url = sys.argv[1]
 
     request = urllib.request.Request(url)
-	"""send the request"""
-   try:
+    
+    try:
         with urllib.request.urlopen(request) as response:
             print(response.read().decode("ascii"))
     except urllib.error.HTTPError as e:
