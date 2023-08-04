@@ -1,8 +1,6 @@
 cat > 3-	
 #!/usr/bin/python3
-# python script that takes in a URL,
-# sends a request to the URL and displays the body of the response
-# (decoded in utf-8)
+# the python script
 """
     send a request to the URL & display body of the response
 """
@@ -15,6 +13,7 @@ if __name__ == "__main__":
     url = sys.argv[1]
 
     request = urllib.request.Request(url)
+	"""send request"""
     try:
         with urllib.request.urlopen(request) as response:
             print(response.read().decode("ascii"))
