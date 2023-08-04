@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-This script sends an HTTP request to a given URL and displays the body of the response.
-Usage: python script_name.py <url>
+This script sends an HTTP request to a given URL
 """
 
 import sys
@@ -12,7 +11,6 @@ if __name__ == "__main__":
     url = sys.argv[1]
 
     request = urllib.request.Request(url)
-    
     try:
         with urllib.request.urlopen(request) as response:
             print(response.read().decode("ascii"))
