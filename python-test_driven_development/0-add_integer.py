@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+'''this funtion adds 2 integers'''
 
 def add_integer(a, b=98):
+    '''a funtion that add two integers 
+    it has 2 arguments
+    '''
     if type(a) == float or type(b)==float:
         a = int(a)
         b = int(b)
