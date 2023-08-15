@@ -3,7 +3,7 @@
 
 
 def add_integer(a, b=98):
-    '''a funtion that add two integers 
+    '''a funtion that add two integers
     it has 2 arguments
     '''
     if type(a) == float or type(b) == float:
