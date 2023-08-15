@@ -3,14 +3,19 @@
 
 
 def matrix_divided(matrix, div):
-    if matrix != float and matrix != int :
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    """"A function that divs a martix with a number"""
+    for row in matrix:
+        if not all(isinstance(element, (int, float))for element in row):
+            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     row_size = len(matrix[0])
+
+
     for row in matrix:
         if len(row) != row_size:
             raise TypeError("Each roe of the matrix must have the same size")
-        if div != flaot and div != int:
+        if not isinstance(div, (int, float)):
             raise TypeError("div must be a number")
+      
         if div == 0:
             raise ZeroDivisionError("division by zero")
         new_matrix = []
