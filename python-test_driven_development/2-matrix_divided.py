@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""must be a list of integers or floats, otherwise"""
+"""
+This module defines function to divide two list int a matrix
+"""
 
 
 def matrix_divided(matrix, div):
@@ -12,7 +14,7 @@ def matrix_divided(matrix, div):
                 raise ZeroDivisionError("division by zero")
         typeErr = "matrix must be a matrix (list of lists) of integers/floats"
         sizeErr = "Each row of the matrix must have the same size"
-        mat_new = []
+        new = []
         if matrix is None or len(matrix) is 0 or len(matrix[0]) is 0:
                 raise TypeError(typeErr)
         old = len(matrix[0])
@@ -22,11 +24,10 @@ def matrix_divided(matrix, div):
                 if len(y) != old:
                         raise TypeError(sizeErr)
                 old = len(y)
-                mat_new.append(y[:])
-
+                new.append(y[:])
                 for a, item in enumerate(y):
                         if not isinstance(item, (int, float)):
                                 raise TypeError(typeErr)
-                        mat_new[count][a] = round(item / div, 2)
+                        new[count][a] = round(item / div, 2)
         else:
-                return (mat_new)
+                return (new)
