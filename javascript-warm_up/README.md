@@ -1,0 +1,1 @@
+Originally developed by Netscape as a way to add interactive elements to web pages, JavaScript has since evolved to become one of the core technologies of the web, alongside HTML and CSS. Today, it's used for a wide range of tasks, from simple form validation to building complex web applications.
