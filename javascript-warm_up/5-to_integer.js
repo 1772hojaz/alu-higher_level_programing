@@ -4,5 +4,5 @@ const [,, arg1] = process.argv;
 if (isNaN(arg1)) {
   console.log('Not a number');
 } else {
-  console.log(`${arg1}`);
+  console.log(`My number:${arg1}`);
 }
