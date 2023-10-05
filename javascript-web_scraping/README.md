@@ -1,0 +1,1 @@
+Web scraping, sometimes called web harvesting or web data extraction, is the process of extracting data from websites. It involves making HTTP requests to web pages, retrieving the HTML response, and then parsing and extracting the data from the HTML. Web scraping can be done manually, but it is usually performed automatically with the help of a bot or web crawler.
