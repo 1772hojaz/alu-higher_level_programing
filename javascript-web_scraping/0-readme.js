@@ -6,12 +6,12 @@ const fileSy = require('fs');
 // Getting the file name from the command-line
 const fiLe = process.argv[2];
 
-// Reading the file and erl is the an argument that calls the error  object 
+// Reading the file and erl is the an argument that calls the error  object
 fileSy.readFile(fiLe, 'utf8', (erl, data) => {
-    if (erl) {
-        console.error(erl);
-    } else {
-        console.log(data);
-    }
+  if (erl) {
+    console.error(erl);
+  } else {
+    console.log(data);
+  }
 });
-//By HUMPHREY NYAHOAJA 
+// By HUMPHREY NYAHOAJA
