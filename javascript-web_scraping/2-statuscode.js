@@ -5,5 +5,5 @@ const rs = require('request');
 // taking input from the comand-line
 const input = process.argv[2];
 rs(input, (erl, resPo) => {
-  console.log('code:' + resPo.statusCode);
+  console.log('code: ' + resPo.statusCode);
 });
